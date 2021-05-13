@@ -1,0 +1,16 @@
+@use './abstracts' as *;
+
+.site-container {
+	@include flex-custom(column, center, space-between);
+
+	width: 100%;
+}
+
+.content-page {
+	width: 100%;
+	// min-height: 100vh;
+	// background-color: rebeccapurple;
+	// background-color: red;
+
+	@include flex-custom(column, flex-start, center);
+}

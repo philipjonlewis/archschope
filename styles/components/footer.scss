@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.footer-container {
+	@include dim-custom(100%, 4rem);
+
+	background-color: $primary-blue;
+
+	color: white;
+}

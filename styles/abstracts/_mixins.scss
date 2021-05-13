@@ -1,0 +1,66 @@
+@use "colors" as *;
+@use "fonts" as *;
+
+@mixin border-custom($direction, $width, $color) {
+	border-#{$direction}: #{$width}px solid #{$color};
+}
+
+@mixin flex-custom($direction, $justify, $align) {
+	display: flex;
+	flex-direction: #{$direction};
+	justify-content: #{$justify};
+	align-items: #{$align};
+}
+
+@mixin dim-custom($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin dim-full() {
+	width: 100%;
+	height: 100%;
+}
+
+@mixin shadow-box() {
+	box-shadow: 0px 5px 5px 0px #32323280;
+}
+
+@mixin border-radius() {
+	border-radius: 0.5rem;
+}
+
+@mixin animation-fade() {
+	animation: 0.5s ease 0s 1 fadeIn;
+}
+
+@mixin animation-transition() {
+	transition: all 0.5s ease;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@mixin notice-flex($bg, $text-color) {
+	@include flex-custom(row, flex-start, center);
+
+	padding: 0 1rem;
+	margin: 1rem 0;
+	height: 4rem;
+
+	background-color: $bg;
+
+	p {
+		font-size: $text-xs;
+		font-weight: bold;
+		color: $text-color;
+	}
+
+	border-left: 4px solid $text-color;
+}

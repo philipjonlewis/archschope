@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.page-content-container {
+	@include flex-custom(column, center, center);
+
+	height: calc(100vh - 4rem);
+	overflow: hidden;
+
+	// margin: 1rem 0;
+	padding: 1rem 0;
+
+	.page-content {
+		@include dim-custom(85.375rem, calc(100vh - 4rem));
+		@include flex-custom(row, flex-start, flex-start);
+
+		// background-color: red;
+		padding: 1rem 0;
+
+		.article-container {
+			overflow: auto;
+			// background-color: red;
+			@include dim-full();
+		}
+	}
+}

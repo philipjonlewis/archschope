@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.infopanel-container {
+	@include flex-custom(column, flex-start, flex-start);
+	@include dim-custom(20rem, 100%);
+	@include border-custom(right, 1, $gray-light);
+
+	min-width: 20rem;
+	height: 100%;
+
+	margin-right: 1rem;
+	padding: 0 1rem;
+
+	h1 {
+		font-size: $text-s;
+		font-weight: bold;
+		color: $primary-blue;
+
+		padding-bottom: 1rem;
+	}
+
+	p {
+		font-size: $text-xs;
+	}
+}

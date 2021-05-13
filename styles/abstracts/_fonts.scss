@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Atkinson-regular';
+	src: url('../fonts/Atkinson-Hyperlegible-Font-Print-and-Web-2020-0514/Atkinson-Hyperlegible-Regular-102.ttf');
+}
+
+@font-face {
+	font-family: 'Atkinson-bold';
+
+	src: url('../fonts/Atkinson-Hyperlegible-Font-Print-and-Web-2020-0514/Atkinson-Hyperlegible-Bold-102.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-bold';
+	src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-medium';
+	src: url('../fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Poppins-regular';
+	src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+$text-xs: 0.9rem;
+$text-s: 1rem;
+$text-m: 1.2rem;
+$text-l: 1.5rem;
+$text-xl: 2rem;

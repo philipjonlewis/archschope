@@ -1,0 +1,62 @@
+@use '../abstracts' as *;
+
+.header-container {
+	@include flex-custom(column, center, center);
+
+	.upper-header-container {
+		@include flex-custom(column, center, flex-start);
+		@include dim-custom(85.375rem, 8rem);
+
+		.logo-container {
+			@include flex-custom(row, center, center);
+
+			p {
+				cursor: pointer;
+				padding-left: 1rem;
+				font-family: 'Poppins-medium';
+				font-weight: 100;
+				font-size: $text-l;
+				color: $primary-blue;
+			}
+		}
+	}
+
+	.lower-header-container {
+		@include flex-custom(column, center, center);
+
+		width: 100vw;
+		background-color: $primary-blue;
+		overflow: hidden;
+		color: white;
+
+		.lower-header {
+			@include dim-custom(85.375rem, 18.75rem);
+			@include flex-custom(column, space-between, flex-start);
+
+			padding: 1rem 0;
+
+			.tagline-container {
+				p {
+					font-family: 'Atkinson-bold';
+					font-size: $text-l;
+				}
+			}
+
+			.link-container {
+				@include flex-custom(row, flex-start, center);
+			}
+		}
+	}
+
+	.navbar-container {
+		@include dim-custom(100vw, 18.75rem);
+		@include border-custom(bottom, 1, $gray-dark);
+		@include flex-custom(column, center, center);
+
+		padding: 1rem 0;
+
+		.navbar-content {
+			@include dim-custom(85.375rem, 100%);
+		}
+	}
+}

@@ -1,0 +1,56 @@
+@use "colors" as *;
+@use "fonts" as *;
+@use "mixins" as *;
+
+//  --- Link Styles
+
+.link-item {
+	@include animation-transition();
+	@include dim-custom(10rem, 4rem);
+	@include flex-custom(row, flex-start, center);
+
+	margin: 1rem 1rem 0 0;
+
+	a {
+		color: $gray-link;
+		font-size: $text-xs;
+	}
+
+	&:hover {
+		transform: translateX(10px);
+
+		a {
+			color: $primary-white;
+			font-weight: bold;
+		}
+	}
+}
+
+.link-active {
+	transform: translateX(10px);
+
+	a {
+		font-weight: bold;
+		color: white;
+
+		font-size: $text-s;
+	}
+}
+
+// --- Notice Styles
+
+.notice-orange {
+	@include notice-flex($bg-orange, $primary-orange);
+}
+
+.notice-green {
+	@include notice-flex($bg-green, $primary-green);
+}
+
+.notice-blue {
+	@include notice-flex($bg-blue, $primary-blue);
+}
+
+.notice-yellow {
+	@include notice-flex($bg-yellow, $primary-yellow);
+}
