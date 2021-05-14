@@ -5,7 +5,7 @@
 
 	.upper-header-container {
 		@include flex-custom(column, center, flex-start);
-		@include dim-custom(85.375rem, 8rem);
+		@include dim-standard(8rem);
 
 		.logo-container {
 			@include flex-custom(row, center, center);
@@ -28,9 +28,10 @@
 		background-color: $primary-blue;
 		overflow: hidden;
 		color: white;
+		padding-left: 0.5rem;
 
 		.lower-header {
-			@include dim-custom(85.375rem, 18.75rem);
+			@include dim-standard(18.75rem);
 			@include flex-custom(column, space-between, flex-start);
 
 			padding: 1rem 0;
@@ -56,7 +57,7 @@
 		padding: 1rem 0;
 
 		.navbar-content {
-			@include dim-custom(85.375rem, 100%);
+			@include dim-standard(100%);
 		}
 	}
 }

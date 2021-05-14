@@ -5,19 +5,18 @@ import { useState, useEffect } from 'react';
 
 const TableOfContents = () => {
 	const router = useRouter();
-	const [content, setcontent] = useState(null);
+
+	const [content, setContent] = useState(null);
 	const [isLoading, setIsLoading] = useState(true);
 
-	const [masterLinks, setMasterLinks] = useState([
+	const isRouteForApi = [
 		'/practice',
 		'/technology',
 		'/utilities',
 		'/history',
 		'/theory',
 		'/design',
-	]);
-
-	const isRouteForApi = masterLinks.includes(router.pathname);
+	].includes(router.pathname);
 
 	useEffect(() => {
 		if (router.pathname !== '/' && isRouteForApi) {
@@ -26,7 +25,7 @@ const TableOfContents = () => {
 					return res.json();
 				})
 				.then((dat) => {
-					setcontent(dat);
+					setContent(dat);
 					setIsLoading(false);
 				})
 				.catch((err) => {

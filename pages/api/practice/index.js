@@ -6,45 +6,49 @@ export default (req, res) => {
 		tableOfContents: [
 			[
 				{
-					title: 'R.A. 9266 - The Architecture Act of 2004',
+					title: 'The Architecture Act of 2004',
+					// title: 'R.A. 9266 - The Architecture Act of 2004',
 					url: '/practice/ra9266',
 				},
 				{
-					title: 'R.A. 9514 - Revised Fire Code',
+					title: 'Revised Fire Code',
+					// title: 'R.A. 9514 - Revised Fire Code',
 					url: '/practice/ra9514',
 				},
 				{
-					title:
-						'R.A. 9904 - Magna Carta for Homeowners & Homeowners Associations',
+					title: 'Magna Carta for Homeowners & H.O Assoc.',
+					// title: 'R.A. 9904 - Magna Carta for Homeowners & H.O Assoc.',
 					url: '/practice/ra9904',
 				},
 				{
-					title: 'P.D. 1096 - National Building Code',
+					title: 'National Building Code',
+					// title: 'P.D. 1096 - National Building Code',
 					url: '/practice/pd1096',
 				},
 				{
-					title:
-						'P.D. 957 - The Subdivision & Condominium Buyer’s Protective Decree',
+					title: "Subdv & Condo Buyers' Protective Decree",
+					// title: 'P.D. 957 - The Subdv & Condo Buyer’s Protective Decree',
 					url: '/practice/pd957',
 				},
 				{
-					title: 'B.P. 220 - Economic & Socialized Housing',
+					title: 'Economic & Socialized Housing',
+					// title: 'B.P. 220 - Economic & Socialized Housing',
 					url: '/practice/bp220',
 				},
 				{
-					title: 'B.P. 344 - Accessibility Law',
+					title: 'Accessibility Law',
+					// title: 'B.P. 344 - Accessibility Law',
 					url: '/practice/bp344',
 				},
 			],
 			[
 				{
-					title:
-						'United Architects of the Philippines - Standards of Professional Practice',
-					url: '/sppdocs',
+					title: 'UAP - Standards of Professional Practice',
+					url: '/practice/sppdocs',
 				},
 				{
 					title: 'Comparative Analysis',
-					url: '/comparativeanalysis',
+					url: '/practice/comparativeanalysis',
 				},
 			],
 		],

@@ -3,7 +3,9 @@ import React from 'react';
 const Footer = () => {
 	return (
 		<div className="footer-container">
-			<h4>This is the footer</h4>
+			<div className="footer-contents">
+				<p> &#169; archscope. | Resources for Future Architects</p>
+			</div>
 		</div>
 	);
 };

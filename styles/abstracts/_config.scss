@@ -21,3 +21,8 @@ a {
 li {
 	list-style: none;
 }
+
+p::selection {
+	color: white;
+	background: #eca900;
+}

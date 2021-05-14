@@ -2,8 +2,20 @@
 
 .footer-container {
 	@include dim-custom(100%, 4rem);
+	@include flex-custom(column, center, center);
 
 	background-color: $primary-blue;
 
 	color: white;
+
+	.footer-contents {
+		@include dim-standard(100%);
+		@include flex-custom(column, center, center);
+
+		// background-color: rebeccapurple;
+
+		p {
+			font-size: $text-xs;
+		}
+	}
 }

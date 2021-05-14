@@ -6,11 +6,39 @@
 	width: 100%;
 }
 
-.content-page {
-	width: 100%;
-	// min-height: 100vh;
-	// background-color: rebeccapurple;
-	// background-color: red;
+.homepage-container {
+	@include flex-custom(column, center, center);
 
-	@include flex-custom(column, flex-start, center);
+
+	.homepage-contents {
+		@include dim-standard(100%);
+		@include flex-custom(row, space-between, flex-start);
+
+		height: calc(100vh - 4rem);
+		// background-color: red;
+
+		.updates-container {
+			@include dim-custom(100%, 95%);
+
+			margin: 1rem 0;
+			padding: 1rem;
+			// background-color: rebeccapurple;
+		}
+
+		.improvement-container {
+			@include border-custom(right, 1, $gray-light);
+
+			min-width: 20rem;
+			height: 95%;
+
+			margin: 1rem 0;
+			padding: 1rem;
+			// background-color: red;
+
+			p {
+				font-family: 'Atkinson-bold';
+				font-size: $text-m;
+			}
+		}
+	}
 }
