@@ -2,8 +2,8 @@
 
 .tableOfContents-container {
 	@include dim-custom(100%, 18.75rem);
-	@include border-custom(bottom, 1, $gray-dark);
 	@include flex-custom(column, center, center);
+	@include border-custom(bottom, 1, $gray-light);
 
 	// margin-bottom: 1rem;
 
@@ -26,12 +26,9 @@
 
 		.content-table {
 			@include dim-custom(100%, 70%);
-
 			@include flex-custom(row, flex-start, flex-start);
 
 			overflow: auto;
-
-			// background-color: yellow;
 
 			.table {
 				@include border-custom(right, 1, $gray-light);
@@ -46,16 +43,27 @@
 
 				margin-right: 1rem;
 
-				a {
+				.sublink {
 					@include animation-transition();
-
-					font-family: 'Atkinson-regular';
-					font-size: $text-xs;
-
+					a {
+						font-family: 'Atkinson-regular';
+						font-size: $text-xs;
+						color: $primary-teal;
+					}
 					&:hover {
 						transform: translateX(10px);
-						color: $primary-blue;
 					}
+				}
+
+				.active-sublink {
+					a {
+						font-family: 'Atkinson-regular';
+						font-size: $text-xs;
+						font-weight: bold;
+					}
+
+					transform: translateX(10px);
+					color: $primary-blue;
 				}
 
 				&:last-of-type {

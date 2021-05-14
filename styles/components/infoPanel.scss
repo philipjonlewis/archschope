@@ -19,7 +19,17 @@
 		padding-bottom: 1rem;
 	}
 
-	p {
+	a {
+		@include animation-transition();
+
+		font-family: 'Atkinson-regular';
 		font-size: $text-xs;
+		color: $gray-light;
+
+		&:hover {
+			@include border-custom(bottom, 1, $primary-orange);
+			transform: translateX(10px);
+			color: $primary-orange;
+		}
 	}
 }

@@ -10,15 +10,17 @@
 	padding: 1rem 0;
 
 	.page-content {
-		@include dim-custom(85.375rem, calc(100vh - 4rem));
+		@include dim-custom(85.375rem, 100%);
 		@include flex-custom(row, flex-start, flex-start);
 
-		// background-color: red;
 		padding: 1rem 0;
 
+		// background-color: red;
+
 		.article-container {
-			overflow: auto;
-			// background-color: red;
+			padding-right: 2rem;
+			max-height: 100%;
+			overflow-y: overlay;
 			@include dim-full();
 		}
 	}

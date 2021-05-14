@@ -33,7 +33,6 @@ const TableOfContents = () => {
 				});
 		}
 	}, [router.pathname]);
-
 	if (!isLoading && router.pathname !== '/') {
 		return (
 			<div className="tableOfContents-container">
@@ -51,9 +50,16 @@ const TableOfContents = () => {
 								>
 									{table.map((link) => {
 										return (
-											<Link href={link.url} key={link.url}>
-												{link.title}
-											</Link>
+											<div
+												key={link.url}
+												className={
+													router.asPath == link.url
+														? 'active-sublink'
+														: 'sublink'
+												}
+											>
+												<Link href={link.url}>{link.title}</Link>
+											</div>
 										);
 									})}
 								</div>

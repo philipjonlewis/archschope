@@ -5,7 +5,11 @@ import { useState, useEffect } from 'react';
 const Practice = () => {
 	return (
 		<PageContent>
-			<p>This is the index page of progessional practice</p>
+			<div className="notice-orange">
+				<p>Add disclaimer here to always check official legal documents</p>
+				{/* <p>x</p> */}
+			</div>
+			<p>This is the index page of Professional practice</p>
 		</PageContent>
 	);
 };

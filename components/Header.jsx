@@ -47,7 +47,7 @@ const Header = () => {
 					<div className="link-container">
 						<div
 							className={
-								router.pathname == '/practice'
+								router.pathname.includes('/practice')
 									? 'link-item link-active'
 									: 'link-item'
 							}
@@ -56,7 +56,7 @@ const Header = () => {
 						</div>
 						<div
 							className={
-								router.pathname == '/technology'
+								router.pathname.includes('/technology')
 									? 'link-item link-active'
 									: 'link-item'
 							}
@@ -65,7 +65,7 @@ const Header = () => {
 						</div>
 						<div
 							className={
-								router.pathname == '/utilities'
+								router.pathname.includes('/utilities')
 									? 'link-item link-active'
 									: 'link-item'
 							}
@@ -74,7 +74,7 @@ const Header = () => {
 						</div>
 						<div
 							className={
-								router.pathname == '/history'
+								router.pathname.includes('/history')
 									? 'link-item link-active'
 									: 'link-item'
 							}
@@ -83,7 +83,7 @@ const Header = () => {
 						</div>
 						<div
 							className={
-								router.pathname == '/theory'
+								router.pathname.includes('/theory')
 									? 'link-item link-active'
 									: 'link-item'
 							}
@@ -92,7 +92,7 @@ const Header = () => {
 						</div>
 						<div
 							className={
-								router.pathname == '/design'
+								router.pathname.includes('/design')
 									? 'link-item link-active'
 									: 'link-item'
 							}

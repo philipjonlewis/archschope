@@ -53,10 +53,10 @@
 }
 
 @mixin notice-flex($bg, $text-color) {
-	@include flex-custom(row, flex-start, center);
+	@include flex-custom(row, space-between, center);
 
 	padding: 0 1rem;
-	margin: 1rem 0;
+	margin: 0 0 1rem 0;
 	height: 4rem;
 
 	background-color: $bg;
