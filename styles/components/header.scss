@@ -51,7 +51,7 @@
 
 	.navbar-container {
 		@include dim-custom(100vw, 18.75rem);
-		@include border-custom(bottom, 1, $gray-dark);
+		@include border-custom(bottom, 1, $gray-light);
 		@include flex-custom(column, center, center);
 
 		padding: 1rem 0;

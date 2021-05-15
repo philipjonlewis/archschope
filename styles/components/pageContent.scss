@@ -5,6 +5,7 @@
 
 	height: calc(100vh - 4rem);
 	overflow: hidden;
+	scroll-behavior: smooth;
 
 	// margin: 1rem 0;
 	padding: 1rem 0;
@@ -14,14 +15,107 @@
 		@include flex-custom(row, flex-start, flex-start);
 
 		padding: 1rem 0;
+		position: relative;
 
 		// background-color: red;
 
 		.article-container {
+			@include dim-full();
+
 			padding-right: 2rem;
 			max-height: 100%;
 			overflow-y: overlay;
-			@include dim-full();
+
+			.article-info-container {
+				p:nth-of-type(1) {
+					color: $primary-blue;
+					font-size: $text-xl;
+					font-weight: bold;
+					font-family: 'Atkinson-bold';
+				}
+
+				p:nth-of-type(2) {
+					@include border-custom(bottom, 1, $gray-light);
+					padding-bottom: 10rem;
+					color: $primary-blue;
+					font-size: $text-s;
+					font-weight: bold;
+				}
+
+				p:nth-of-type(3) {
+					@include border-custom(bottom, 1, $gray-light);
+
+					font-size: $text-xs;
+					padding: 4rem 0;
+					margin-bottom: 1rem;
+				}
+			}
+
+			.article-content-container {
+				width: 100%;
+
+				.section-header {
+					padding-top: 2rem;
+					padding-bottom: 2rem;
+					text-align: center;
+
+					p:nth-of-type(1) {
+						font-size: $text-l;
+						font-weight: bold;
+						font-family: 'Atkinson-bold';
+					}
+
+					p:nth-of-type(2) {
+						color: $gray-dark;
+						font-size: $text-s;
+						font-family: 'Atkinson-regular';
+					}
+				}
+
+				h1:nth-of-type(1) {
+					text-align: center;
+				}
+
+				h2:nth-of-type(1) {
+					text-align: center;
+				}
+
+				h1 {
+					font-size: $text-l;
+					font-weight: bold;
+					font-family: 'Atkinson-bold';
+				}
+				h2 {
+					color: $gray-dark;
+					font-size: $text-s;
+					font-weight: bold;
+					font-family: 'Atkinson-regular';
+				}
+
+				p {
+					font-size: $text-s;
+					font-family: 'Atkinson-regular';
+					padding-bottom: 1rem;
+					margin-bottom: 1rem;
+				}
+
+				ol {
+					// list-style: upper-roman;
+					li {
+						list-style-position: inside;
+						font-size: $text-s;
+						font-family: 'Atkinson-regular';
+					}
+					ol {
+						padding-left: 2rem;
+						
+						li {
+							
+							font-size: $text-xs;
+						}
+					}
+				}
+			}
 		}
 	}
 }

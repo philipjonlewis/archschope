@@ -7,6 +7,10 @@
 	font-size: 1rem;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	box-sizing: border-box;
 	color: #585858;
@@ -18,11 +22,24 @@ a {
 	color: inherit;
 }
 
-li {
-	list-style: none;
-}
+// li {
+// 	list-style: none;
+// }
+
+// p::selection {
+// 	color: white;
+// 	background: #0449af;
+// }
 
 p::selection {
 	color: white;
-	background: #eca900;
+	background: #ff522d;
+}
+li::selection {
+	color: white;
+	background: #ff522d;
+}
+br::selection {
+	color: white;
+	background: #ff522d;
 }

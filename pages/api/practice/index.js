@@ -10,6 +10,7 @@ export default (req, res) => {
 					// title: 'R.A. 9266 - The Architecture Act of 2004',
 					url: '/practice/ra9266',
 				},
+
 				{
 					title: 'Revised Fire Code',
 					// title: 'R.A. 9514 - Revised Fire Code',
