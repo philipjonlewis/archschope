@@ -53,7 +53,7 @@
 
 			.article-content-container {
 				width: 100%;
-
+				
 				.section-header {
 					padding-top: 2rem;
 					padding-bottom: 2rem;
@@ -99,14 +99,14 @@
 					margin-bottom: 1rem;
 				}
 
-				ol {
+				ol,ul {
 					// list-style: upper-roman;
 					li {
 						list-style-position: inside;
 						font-size: $text-s;
 						font-family: 'Atkinson-regular';
 					}
-					ol {
+					ol,ul {
 						padding-left: 2rem;
 						
 						li {
